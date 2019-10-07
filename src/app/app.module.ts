@@ -14,6 +14,10 @@ import {InMemoryDataService} from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { MissioncontrolComponent } from './missioncontrol/missioncontrol.component';
 import { AstronautComponent } from './astronaut/astronaut.component';
+import { AdDirective } from './ad.directive';
+import { AdBannerComponent } from './ad-banner/ad-banner.component';
+import { HeroJobAdComponent } from './hero-job-ad/hero-job-ad.component';
+import { HeroProfileComponent } from './hero-profile/hero-profile.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,15 @@ import { AstronautComponent } from './astronaut/astronaut.component';
     DashboardComponent,
     HeroSearchComponent,
     MissioncontrolComponent,
-    AstronautComponent
+    AstronautComponent,
+    AdDirective,
+    AdBannerComponent,
+    HeroJobAdComponent,
+    HeroProfileComponent
+  ],
+  entryComponents: [
+    HeroJobAdComponent,
+    HeroProfileComponent
   ],
   imports: [
     BrowserModule,
